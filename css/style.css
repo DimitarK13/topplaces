@@ -25,22 +25,36 @@ span{
 
 h1{
     font-size: 5rem;
-    /* color: #90f; */
 }
 
 main{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 250, 244);
+    display: flex;
+    flex-direction: row;
+
     position: relative;
+    isolation: isolate;
+}
+
+main > h1 {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: .1em;
+    width: max-content;
 }
 
 main > div{
-    position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 20%;
+    height: 100vh;
     background-size: cover;
-    clip-path: circle(50%);
+    background-position: center;
     filter: grayscale(100%);
     cursor: pointer;
 }
