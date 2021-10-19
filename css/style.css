@@ -13,6 +13,15 @@ a{
 
 li{
     list-style: none;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+p{
+    font-size: 1.2rem;
 }
 
 span{
@@ -23,9 +32,6 @@ span{
     cursor: pointer;
 }
 
-h1{
-    font-size: 5rem;
-}
 
 main{
     height: 100vh;
@@ -40,11 +46,11 @@ main{
 main > h1 {
     position: absolute;
     z-index: 1;
-    color: #fff;
+    color: #3bceff;
+    text-shadow: 5px 5px 0 rgb(0 0 0 / .3);
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: transparent;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: .1em;
